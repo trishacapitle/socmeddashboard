@@ -11,7 +11,6 @@ This is a solution to the [Social media dashboard with theme switcher challenge 
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
 
@@ -89,14 +88,10 @@ Here's the method I used for the theme switch. I used uniform layout for positio
 
 ```
 
-### Continued development
-
-There are still complex CSS stylings and javascript DOM manipulation I hope to implement on other projects. 
-
 ### Useful resources
 
-- (https://www.example.com](https://www.w3schools.com/howto/howto_js_toggle_dark_mode.asp) - This helped me for the toggle function.
-- (https://www.example.com](https://codepen.io/SaraSoueidan/pen/jpBbrq) - This is where I got the toggle switch component and modified it to the design requirement.
+- (https://www.w3schools.com/howto/howto_js_toggle_dark_mode.asp) - This helped me for the toggle function.
+- (https://codepen.io/SaraSoueidan/pen/jpBbrq) - This is where I got the toggle switch component and modified it to the design requirement.
 
 ## Author
 
