@@ -18,12 +18,14 @@
   --bg-dark: hsl(230, 17%, 14%);
   --top-bg-dark: hsl(232, 19%, 15%);
   --card-bg-dark: hsl(228, 28%, 20%);
+  --card-bg-dark-hover: hsl(230, 26%, 28%);
   --text-dark: hsl(228, 34%, 66%);
   --white-text-dark: hsl(0, 0%, 100%);
 
   --bg-light: hsl(0, 0%, 100%);
   --top-bg-light: hsl(225, 100%, 98%);
   --card-bg-light: hsl(227, 47%, 96%);
+  --card-bg-light-hover: hsl(227, 47%, 90%);
   --text-light: hsl(228, 12%, 44%);
   --dark-text-light: hsl(230, 17%, 14%);
 
@@ -73,6 +75,10 @@ body {
     color: var(--white-text-dark);
   }
 
+  .main-card:hover, .card:hover {
+    background-color: var(--card-bg-dark-hover);
+  }
+
   p[class="followers__text"], p[class="username"], p[class="sub-title"], p[class="dark-mode"], p[class="card-title"] {
     color: var(--text-dark);
   }
@@ -96,12 +102,16 @@ body {
   }
 
   hr {
-    border: 0.5px solid var(--card-bg-dark);
+    border: 1px solid var(--toggle-light);
   } 
 
   .main-card, .card {
     background-color: var(--card-bg-light);
     color: var(--dark-text-light);
+  }
+
+  .main-card:hover, .card:hover {
+    background-color: var(--card-bg-light-hover);
   }
 
   p[class="followers__text"], p[class="username"], p[class="sub-title"], p[class="light-mode"], p[class="card-title"] {
