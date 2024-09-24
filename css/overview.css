@@ -4,6 +4,7 @@ section {
     align-items: center;
     justify-items: center;
     padding: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 section h2 {
@@ -64,6 +65,3 @@ section h2 {
     align-self: end;
 }
 
-@media (min-width: 700px) {
-    
-}
