@@ -1,0 +1,96 @@
+
+main {
+padding: 1.5rem;
+
+}
+
+@media (min-width: 500px) {
+main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+}
+
+@media (min-width: 900px) {
+    main {
+    grid-template-columns: repeat(4, 1fr);     
+    }
+}
+
+.main-card {
+    width: 100%;
+    height: 250px;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.username__container {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+.facebook {
+    border-top: 0.2rem solid var(--facebook);
+}
+
+.twitter {
+    border-top: 0.2rem solid var(--twitter);
+}
+
+.instagram {
+    position: relative;
+    overflow: hidden;
+}
+
+.instagram::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 0.2rem;
+    background-image: var(--instagram-gradient);
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+
+.youtube {
+    border-top: 0.2rem solid var(--youtube);
+}
+
+.username {
+    font-size: 0.8rem;
+    font-weight: var(--font-weight-bold);
+}
+
+.followers__container {
+    text-align: center;
+}
+
+.followers__number {
+    font-size: 4rem;
+    font-weight: var(--font-weight-bold);
+}
+
+.followers__text {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.today {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+    font-size: 0.8rem;
+    font-weight: var(--font-weight-bold);
+}
+

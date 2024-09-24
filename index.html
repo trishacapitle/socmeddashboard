@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Social Media Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header__title">
+      <h1 class="title">Social Media Dashboard</h1>
+      <p class="sub-title">Total Followers: 23,004</p>
+    </div>
+    <hr>
+    <div class="toggle">
+      <p class="dark-mode">Dark Mode</p><p class="light-mode">Light Mode</p><input type="checkbox" id="switch" onclick="switchTheme()"/><label for="switch"></label>
+    </div>
+  </header>
+
+  
+  <main class="main-container">
+    <div class="main-card facebook">
+      <div class="username__container">
+        <img src="./images/icon-facebook.svg" alt="Facebook Icon">
+        <p class="username">@nathanf</p>
+      </div>
+      <div class="followers__container">
+        <h1 class="followers__number">1987</h1>
+        <p class="followers__text">Followers</p>
+      </div>
+      <p class="today green-text"><img src="./images/icon-up.svg" alt="Increase" aria-hidden="true"> 12 Today</p>
+    </div>
+
+    <div class="main-card twitter ">
+      <div class="username__container">
+        <img src="./images/icon-twitter.svg" alt="Twitter Icon">
+        <p class="username">@nathanf</p>
+      </div>
+      <div class="followers__container">
+        <h1 class="followers__number">1044</h1>
+        <p class="followers__text">Followers</p>
+      </div>
+      <p class="today green-text"><img src="./images/icon-up.svg" alt="Increase" aria-hidden="true"> 99 Today</p>
+    </div>
+
+    <div class="main-card instagram ">
+      <div class="username__container">
+        <img src="./images/icon-instagram.svg" alt="Instagram Icon">
+        <p class="username">@realnathanf</p>
+      </div>
+      <div class="followers__container">
+        <h1 class="followers__number">11k</h1>
+        <p class="followers__text">Followers</p>
+      </div>
+      <p class="today green-text"><img src="./images/icon-up.svg" alt="Increase" aria-hidden="true"> 1099 Today</p>
+    </div>
+
+    <div class="main-card youtube">
+      <div class="username__container">
+        <img src="./images/icon-youtube.svg" alt="YouTube Icon">
+        <p class="username">Nathan F.</p>
+      </div>
+      <div class="followers__container">
+        <h1 class="followers__number">8239</h1>
+        <p class="followers__text">Subscribers</p>
+      </div>
+      <p class="today red-text"><img src="./images/icon-down.svg" alt="Decrease" aria-hidden="true"> 144 Today</p>
+    </div>
+  </main>
+
+
+
+  <section class="overview-container">
+    <h2 class="overview-title">Overview - Today</h2>
+
+    <div class="card">
+      <p class="card-title">Page Views</p>
+      <img src="./images/icon-facebook.svg" alt="Facebook Icon">
+      <h1>87</h1>
+      <p class="percentage green-text"><img src="./images/icon-up.svg" alt="Increase" aria-hidden="true"> 3%</p>
+    </div>
+
+    <div class="card">
+      <p class="card-title">Likes</p>
+      <img src="./images/icon-facebook.svg" alt="Facebook Icon">
+      <h1>52</h1>
+      <p class="percentage red-text"><img src="./images/icon-down.svg" alt="Decrease" aria-hidden="true"> 2%</p>
+    </div>
+
+    <div class="card">
+      <p class="card-title">Likes</p>
+      <img src="./images/icon-instagram.svg" alt="Instagram Icon">
+      <h1>5462</h1>
+      <p class="percentage green-text"><img src="./images/icon-up.svg" alt="Increase" aria-hidden="true"> 2257%</p>
+    </div>
+
+    <div class="card">
+      <p class="card-title">Profile Views</p>
+      <img src="./images/icon-instagram.svg" alt="Instagram Icon">
+      <h1>52k</h1>
+      <p class="percentage green-text"><img src="./images/icon-up.svg" alt="Increase" aria-hidden="true"> 1375%</p>
+    </div>
+
+    <div class="card">
+      <p class="card-title">Retweets</p>
+      <img src="./images/icon-twitter.svg" alt="Twitter Icon">
+      <h1>117</h1>
+      <p class="percentage green-text"><img src="./images/icon-up.svg" alt="Increase" aria-hidden="true"> 303%</p>
+    </div>
+
+    <div class="card">
+      <p class="card-title">Likes</p>
+      <img src="./images/icon-twitter.svg" alt="Twitter Icon">
+      <h1>507</h1>
+      <p class="percentage green-text"><img src="./images/icon-up.svg" alt="Increase" aria-hidden="true"> 553%</p>
+    </div>
+
+    <div class="card">
+      <p class="card-title">Likes</p>
+      <img src="./images/icon-youtube.svg" alt="YouTube Icon">
+      <h1>107</h1>
+      <p class="percentage red-text"><img src="./images/icon-down.svg" alt="Decrease" aria-hidden="true"> 19%</p>
+    </div>
+
+    <div class="card">
+      <p class="card-title">Total Views</p>
+      <img src="./images/icon-youtube.svg" alt="YouTube Icon">
+      <h1>1407</h1>
+      <p class="percentage red-text"><img src="./images/icon-down.svg" alt="Decrease" aria-hidden="true"> 12%</p>
+    </div>
+  </section>
+  
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/trishacapitle" target="_blank">ash_dev</a>.
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

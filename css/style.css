@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+@import url('header.css');
+@import url('main.css');
+@import url('overview.css');
+
+:root {
+  --lime-green: hsl(163, 72%, 41%);
+  --bright-red: hsl(356, 69%, 56%);
+
+  --facebook: hsl(208, 92%, 53%);
+  --twitter: hsl(203, 89%, 53%);
+  --instagram-gradient: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+  --youtube: hsl(348, 97%, 39%);
+  --toggle-dark: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+  --toggle-light: hsl(230, 22%, 74%);
+
+  --bg-dark: hsl(230, 17%, 14%);
+  --top-bg-dark: hsl(232, 19%, 15%);
+  --card-bg-dark: hsl(228, 28%, 20%);
+  --text-dark: hsl(228, 34%, 66%);
+  --white-text-dark: hsl(0, 0%, 100%);
+
+  --bg-light: hsl(0, 0%, 100%);
+  --top-bg-light: hsl(225, 100%, 98%);
+  --card-bg-light: hsl(227, 47%, 96%);
+  --text-light: hsl(228, 12%, 44%);
+  --dark-text-light: hsl(230, 17%, 14%);
+
+  --font-family: 'Inter', sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1440px;
+  width: 100%;
+  font-family: var(--font-family);
+  font-size: 14px;
+}
+
+@media (min-width: 1100px) {
+  body {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+/* dark mode */
+.dark { 
+  background-color: var(--bg-dark);
+
+  .header {
+    background-color: var(--top-bg-dark);
+  }
+
+  .title, .overview-title {
+    color: #fff;
+  }
+
+  hr {
+    border: 1px solid var(--card-bg-dark);
+  } 
+
+  .main-card, .card {
+    background-color: var(--card-bg-dark);
+    color: var(--white-text-dark);
+  }
+
+  p[class="followers__text"], p[class="username"], p[class="sub-title"], p[class="dark-mode"], p[class="card-title"] {
+    color: var(--text-dark);
+  }
+
+}
+
+/* light mode */
+.light {
+  background-color: var(--bg-light);
+
+  .header {
+    background-color: var(--top-bg-dark);
+  }
+
+  .title {
+    color: #000;
+  }
+
+  .overview-title {
+    color: var(--text-light);
+  }
+
+  hr {
+    border: 0.5px solid var(--card-bg-dark);
+  } 
+
+  .main-card, .card {
+    background-color: var(--card-bg-light);
+    color: var(--dark-text-light);
+  }
+
+  p[class="followers__text"], p[class="username"], p[class="sub-title"], p[class="light-mode"], p[class="card-title"] {
+    color: var(--text-light);
+  }
+}
+
+.green-text {
+  color: var(--lime-green);
+}
+
+.red-text {
+  color: var(--bright-red);
+}
+
+
